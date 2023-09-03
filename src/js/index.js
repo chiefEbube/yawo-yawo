@@ -1,3 +1,7 @@
+import landingPageData from './landingPageData'
+import Page from './Page.js'
+
+
 const landingContainer = document.getElementById("landing-page-container")
 const signInBtn = document.getElementById("sign-in")
 const getStartedBtn = document.getElementById("get-started-btn")
@@ -34,3 +38,8 @@ getStartedBtn.addEventListener('click', renderLandingPage)
 // signInBtn.addEventListener('click', () => {
 //     renderHomeHtml()
 // })
+
+
+const landing1 = new Page(landingPageData.landing1)
+const landing2 = new Page(landingPageData.landing2)
+const landing3 = new Page(landingPageData.landing3)
