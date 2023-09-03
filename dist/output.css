@@ -581,6 +581,30 @@ video {
   left: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -594,6 +618,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .-mt-3 {
@@ -616,6 +645,14 @@ video {
   margin-top: 2rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -624,8 +661,38 @@ video {
   display: flex;
 }
 
+.grid {
+  display: grid;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.max-h-min {
+  max-height: -moz-min-content;
+  max-height: min-content;
 }
 
 .w-10\/12 {
@@ -648,6 +715,14 @@ video {
   width: 100%;
 }
 
+.w-36 {
+  width: 9rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .min-w-min {
   min-width: -moz-min-content;
   min-width: min-content;
@@ -657,8 +732,24 @@ video {
   max-width: 32rem;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -685,6 +776,11 @@ video {
 .bg-primaryOrange {
   --tw-bg-opacity: 1;
   background-color: rgb(254 89 0 / var(--tw-bg-opacity));
+}
+
+.bg-myBlack {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 16 16 / var(--tw-bg-opacity));
 }
 
 .px-3 {
@@ -729,12 +825,25 @@ video {
   line-height: 1rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-light {
   font-weight: 300;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .text-grayBg {
