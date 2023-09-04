@@ -11,5 +11,4 @@ const users = {
         following: 150,
 
     },
-
 }

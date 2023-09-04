@@ -1,5 +1,5 @@
 const pagesEl = document.getElementById("pages")
-// const signInBtn = document.getElementById("sign-in")
+const signInBtn = document.getElementById("sign-in")
 const getStartedBtn = document.getElementById("get-started-btn")
 const pageOneBtn = document.getElementById("page-one-btn")
 const pageTwoBtn = document.getElementById("page-two-btn")
@@ -75,6 +75,7 @@ const renderLandingPage1 = () => {
     pagesEl.innerHTML = getPageHtml1()
     getStartedBtn.style.visibility = "hidden"
     pageOneBtn.classList.remove("hidden")
+    document.getElementById("skip").classList.remove("hidden")
 }
 
 const renderLandingPage2 = () => {
