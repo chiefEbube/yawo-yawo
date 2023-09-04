@@ -22,6 +22,7 @@ module.exports = {
       'myBlack': '#101010',
       'lightBg': '#F5F5F5',
       'grayBg': '#807676',
+      'greenOnline': '#00FF00',
     },
   },
   plugins: [],
