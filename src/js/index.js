@@ -10,21 +10,21 @@ const pages = [
         id: 'page1',
         title: 'Discover and Connect',
         text: 'Explore and connect with travelers worldwide in a vibrant group.',
-        image: './images/landing1.png',
+        image: './images/landing1.svg',
     },
 
     {
         id: 'page2',
         title: 'Share Adventures',
         text: 'Share your moments and inspire others with your travel stories.',
-        image: './images/landing2.png',
+        image: './images/landing2.svg',
     },
 
     {
         id: 'page3',
         title: 'Travel Safe Anywhere',
         text: 'Enjoy peace of mind with our safety features, ensuring a secure journey.',
-        image: './images/landing3.png',
+        image: './images/landing3.svg',
     },
 ]
 
@@ -70,13 +70,21 @@ const getPageHtml3 = () => {
     `
 }
 
-const renderLandingPage1 = () => {
+setTimeout(() => {
     document.body.style.backgroundColor = "white"
     pagesEl.innerHTML = getPageHtml1()
     getStartedBtn.style.visibility = "hidden"
     pageOneBtn.classList.remove("hidden")
     document.getElementById("skip").classList.remove("hidden")
-}
+}, 2500);
+
+// const renderLandingPage1 = () => {
+//     document.body.style.backgroundColor = "white"
+//     pagesEl.innerHTML = getPageHtml1()
+//     getStartedBtn.style.visibility = "hidden"
+//     pageOneBtn.classList.remove("hidden")
+//     document.getElementById("skip").classList.remove("hidden")
+// }
 
 const renderLandingPage2 = () => {
     document.body.style.backgroundColor = "white"
@@ -92,6 +100,5 @@ const renderLandingPage3 = () => {
     pageThreeBtn.classList.remove("hidden")
 }
 
-getStartedBtn.addEventListener('click', renderLandingPage1)
 pageOneBtn.addEventListener('click', renderLandingPage2)
 pageTwoBtn.addEventListener('click', renderLandingPage3)

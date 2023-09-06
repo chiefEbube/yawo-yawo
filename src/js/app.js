@@ -12,7 +12,7 @@ const posts = [
 
     {
         username: "okoyemary",
-        profilePic: "./images/profile-pic.png",
+        profilePic: "./images/dp2.jpg",
         image: "./images/image-post.png",
         text: "Found a new spot to work !",
         likes: 92,
@@ -24,7 +24,7 @@ const posts = [
 
     {
         username: "davidade",
-        profilePic: "./images/profile-pic.png",
+        profilePic: "./images/dp3.png",
         text: "Who else has visited the new water park in Abuja that just opened? well, i have and i had so much fun there",
         likes: 92,
         replies: 43,
@@ -34,8 +34,8 @@ const posts = [
     },
 
     {
-        username: "tundeednot",
-        profilePic: "./images/profile-pic.png",
+        username: "jamesadam",
+        profilePic: "./images/dp4.png",
         image: "./images/image-post-2.png",
         text: "Found a new spot to work !",
         likes: 92,
@@ -79,7 +79,7 @@ const setPostsHtml = () =>{
         <div class="flex items-center justify-between">
             <div class="flex items-center gap-1">
                 <img class="mx-auto ring-primaryOrange w-12 h-12 p-1 rounded-full ring-2"
-                    src="./images/profile-pic.png" alt="">
+                    src="${post.profilePic}" alt="">
                 <span class="text-myBlack text-sm ml-2 font-medium">@${post.username}</span>
                 <span class="text-xs font-light ml-3 text-grayBg">${post.time} minutes ago</span>
             </div>
